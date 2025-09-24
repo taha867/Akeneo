@@ -1,0 +1,10 @@
+services:
+  acme.category_description.form_extension:
+    class: stdClass
+    tags:
+      - { name: pim.ui.extension,
+          type: form,
+          alias: acme-category-description,
+          target: pim-category-edit-form-properties,
+          module: 'acme/category/field/description',
+          position: 120 }

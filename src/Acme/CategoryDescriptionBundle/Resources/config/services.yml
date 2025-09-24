@@ -1,0 +1,9 @@
+# configure RequireJS paths and optional form extensions.
+services:
+  _defaults: { autowire: true, autoconfigure: true, public: false }
+
+  Acme\CategoryDescriptionBundle\Controller\:
+    resource: '../../Controller'
+    tags: ['controller.service_arguments']
+
+  Acme\CategoryDescriptionBundle\Repository\CategoryDescriptionRepository: ~

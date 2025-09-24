@@ -1,0 +1,10 @@
+doctrine:
+  orm:
+    mappings:
+      AcmeCategoryDescriptionBundle:
+        is_bundle: false
+        type: xml
+        dir: '%kernel.project_dir%/src/Acme/CategoryDescriptionBundle/Resources/config/doctrine'
+        prefix: 'Akeneo\Category\Infrastructure\Component\Model'
+        alias: AcmeCategoryDescription
+

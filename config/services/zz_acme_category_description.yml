@@ -1,0 +1,4 @@
+imports:
+  - { resource: '../../src/Acme/CategoryDescriptionBundle/Resources/config/services.yml' }
+  - { resource: '../../src/Acme/CategoryDescriptionBundle/Resources/config/services_assets.yml' }
+  - { resource: '../../src/Acme/CategoryDescriptionBundle/Resources/config/services_form.yml' }

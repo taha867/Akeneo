@@ -1,0 +1,28 @@
+# ACME Category Description endpoints (explicit, no attributes required)
+
+acme_category_description_get:
+  path: /acme/category-description/{id}
+  controller: Acme\CategoryDescriptionBundle\Controller\CategoryDescriptionController::get
+  methods: [GET]
+
+acme_category_description_put:
+  path: /acme/category-description/{id}
+  controller: Acme\CategoryDescriptionBundle\Controller\CategoryDescriptionController::put
+  methods: [PUT]
+
+# Image endpoints
+acme_category_image_get:
+  path: /acme/category-image/{id}
+  controller: Acme\CategoryDescriptionBundle\Controller\CategoryDescriptionController::getImage
+  methods: [GET]
+
+acme_category_image_put:
+  path: /acme/category-image/{id}
+  controller: Acme\CategoryDescriptionBundle\Controller\CategoryDescriptionController::putImage
+  methods: [PUT]
+
+acme_category_image_upload:
+  path: /acme/category-image/{id}/upload
+  controller: Acme\CategoryDescriptionBundle\Controller\CategoryDescriptionController::uploadImage
+  methods: [POST]
+

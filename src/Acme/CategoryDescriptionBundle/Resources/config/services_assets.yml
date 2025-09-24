@@ -1,0 +1,12 @@
+#  Registers your front-end assets with Akeneo UI system:
+services:
+  _defaults: { public: true }
+
+  acme.category_description.assets:
+    class: stdClass
+    tags:
+      - { name: pim.ui.extension, type: frontend, module: 'requirejs-config', src: 'bundles/acmecategorydescription/js/requirejs-config.js' }
+      - { name: pim.ui.extension, type: frontend, module: 'acme/category/overlay', src: 'bundles/acmecategorydescription/js/category-description-overlay.js' }
+
+
+
