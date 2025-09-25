@@ -7,3 +7,12 @@ services:
     tags: ['controller.service_arguments']
 
   Acme\CategoryDescriptionBundle\Repository\CategoryDescriptionRepository: ~
+
+  # Decorate external API category normalizer to inject custom fields
+  Acme\CategoryDescriptionBundle\Normalizer\ExternalApi\AcmeCategoryNormalizer:
+    decorates: 'pim_api.normalizer.category'
+    arguments:
+      - '@Acme\CategoryDescriptionBundle\Normalizer\ExternalApi\AcmeCategoryNormalizer.inner'
+      - '@Acme\CategoryDescriptionBundle\Repository\CategoryDescriptionRepository'
+    tags:
+      - { name: 'pim_external_api_serializer.normalizer', priority: 95 }
